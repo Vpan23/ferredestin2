@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(218, 139, 35);
+    background-color: var(--color_principal)
 }
 #navbar {
     display: block;
@@ -554,7 +554,10 @@ body {
     #navbar .contain-navbar .list-nav li{
         display: none;
     }
-    #navbar #list-nav-open li{
+    #navbar #ul-nav-open {
+        padding: 0;
+    }
+    #navbar #ul-nav-open li{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -673,6 +676,7 @@ body {
         text-align: center;
         line-height: .9;
         margin-top: 3.4rem;
+        color: #fff;
     }
     .miniContent h2 {
         color: var(--color_principal);
