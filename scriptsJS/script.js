@@ -3,7 +3,7 @@ const NAVBAR_OPEN = document.getElementById('list-nav-open');
 
 // 3ra Seccion #cotizar
 const BTN_SUBMIT = document.getElementById('btn-cotizacion');
-
+const dataHidden = document.getElementById('data-hidden');
 var validacion = false;
 MENU_BUTTON.addEventListener(('click'), () => {
     if(validacion == false) {
@@ -18,5 +18,8 @@ MENU_BUTTON.addEventListener(('click'), () => {
 })
 
 function submitCotizacion() {
-    BTN_SUBMIT.innerHTML = ''
+    dataHidden.innerHTML = 'Completa los datos REQUERIDOS!';
+    dataHidden.style.color = 'red';
+    dataHidden.style.fontSize = 'small';
+    dataHidden.style.textAlign = 'center';
 }
